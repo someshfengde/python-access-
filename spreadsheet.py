@@ -13,6 +13,5 @@ client = gspread.authorize(creds)
 # Make sure you use the right name here.
 sheet = client.open("New_Study_For_telegram bot").sheet1
 
-# Extract and print all of the values
 list_of_hashes = sheet.get_all_records()
 print(list_of_hashes)
